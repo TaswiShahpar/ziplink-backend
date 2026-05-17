@@ -1,5 +1,6 @@
 package com.urlshortener.url_shortener;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -13,6 +14,7 @@ public class Url {
     private Long id;
     private String longUrl;
     private String shortCode;
+    @Column(columnDefinition = "datetime")
     private LocalDateTime expiryDate;
     private int clickCount=0;
     public Long getId(){return id;}
