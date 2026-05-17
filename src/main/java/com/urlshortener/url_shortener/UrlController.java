@@ -9,7 +9,7 @@ import org.springframework.web.servlet.view.RedirectView;
 
 import com.urlshortener.url_shortener.UrlRepository;
 
-@CrossOrigin(origins="http://localhost:3000")
+@CrossOrigin(origins="https://ziplink-frontend-qovk.vercel.app")
 @RestController
 public class UrlController {
 
